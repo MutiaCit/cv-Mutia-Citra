@@ -1,0 +1,72 @@
+/* Mengaktifkan smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Memberi padding pada body untuk mengakomodasi navbar fiks */
+body {
+    padding-top: 56px; /* Sesuaikan dengan tinggi navbar Anda */
+}
+
+/* Memberi padding pada setiap section */
+section {
+    padding: 60px 0;
+}
+
+/* Skema Warna Pink */
+.bg-primary {
+    background-color: #E83E8C !important; /* !important untuk menimpa Bootstrap */
+}
+
+.badge.bg-primary {
+    background-color: #E83E8C !important; 
+}
+
+/* Gaya untuk header profil */
+header#profile {
+    padding: 80px 0;
+}
+
+/* Efek hover pada kartu pengalaman dan pendidikan */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0,0,0,.1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Gaya untuk footer */
+footer i {
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+footer a:hover i {
+    color: #E83E8C; /* Warna pink */
+}
+
+/* Atur ukuran foto profil */
+header#profile img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+}
+
+/*
+ * Pink Theme Overrides
+ */
+
+/* Navbar */
+.navbar.bg-dark {
+    background-color: #A30052 !important;
+}
+
+/* Badges */
+.badge.bg-secondary {
+    background-color: #FFD1E3 !important;
+    color: #333 !important;
+}
+
+/* Footer */
+footer.bg-light {
+    background-color: #FFF5F9 !important;
+}
