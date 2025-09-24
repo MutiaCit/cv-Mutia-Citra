@@ -1,3 +1,7 @@
+/* ----------------------------------------
+   General Styling & Layout
+---------------------------------------- */
+
 /* Mengaktifkan smooth scroll */
 html {
     scroll-behavior: smooth;
@@ -13,18 +17,16 @@ section {
     padding: 60px 0;
 }
 
-/* Skema Warna Pink */
-.bg-primary {
-    background-color: #E83E8C !important; /* !important untuk menimpa Bootstrap */
-}
-
-.badge.bg-primary {
-    background-color: #E83E8C !important; 
-}
-
 /* Gaya untuk header profil */
 header#profile {
     padding: 80px 0;
+}
+
+/* Atur ukuran foto profil */
+header#profile img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
 }
 
 /* Efek hover pada kartu pengalaman dan pendidikan */
@@ -44,29 +46,77 @@ footer a:hover i {
     color: #E83E8C; /* Warna pink */
 }
 
-/* Atur ukuran foto profil */
-header#profile img {
-    width: 140px;
-    height: 140px;
-    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+/* ----------------------------------------
+   Skema Warna Pink (Ganti Semua Warna Biru Bootstrap)
+---------------------------------------- */
+
+/* Warna utama pink menggantikan biru default Bootstrap */
+.bg-primary,
+.btn-primary,
+.text-primary,
+.border-primary {
+    background-color: #E83E8C !important;
+    border-color: #E83E8C !important;
+    color: #fff !important;
 }
 
-/*
- * Pink Theme Overrides
- */
+/* Hover dan active states untuk tombol primary */
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: #d63384 !important;
+    border-color: #d63384 !important;
+    color: #fff !important;
+}
 
-/* Navbar */
+/* Tombol outline primary */
+.btn-outline-primary {
+    color: #E83E8C !important;
+    border-color: #E83E8C !important;
+    background-color: transparent !important;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+    background-color: #E83E8C !important;
+    color: #fff !important;
+    border-color: #d63384 !important;
+}
+
+/* Badge dengan class primary */
+.badge.bg-primary {
+    background-color: #E83E8C !important;
+    color: #fff !important;
+}
+
+/* Link dengan .text-primary */
+a.text-primary,
+a.text-primary:visited {
+    color: #E83E8C !important;
+}
+
+a.text-primary:hover,
+a.text-primary:focus {
+    color: #d63384 !important;
+}
+
+/* ----------------------------------------
+   Tema Pink Kustom
+---------------------------------------- */
+
+/* Navbar dengan latar belakang gelap diubah ke ungu tua */
 .navbar.bg-dark {
     background-color: #A30052 !important;
 }
 
-/* Badges */
+/* Badges sekunder dengan warna pink muda */
 .badge.bg-secondary {
     background-color: #FFD1E3 !important;
     color: #333 !important;
 }
 
-/* Footer */
+/* Footer dengan latar belakang pink sangat muda */
 footer.bg-light {
     background-color: #FFF5F9 !important;
 }
